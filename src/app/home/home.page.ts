@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {Platform} from '@ionic/angular';
+import {Geolocation} from '@ionic-native/geolocation/ngx';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +9,18 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+    /*Prova Geolocalizzazione, lascia constructor(){}*/
 
+/*position:any;*/
+  constructor(
+    /*private geolocalizzazione : Geolocation*/
+  ) {}
+/*getLocalizzazione(){
+  this.geolocalizzazione.getCurrentPosition({timeout : 3000 , enableHighAccuracy : true})
+  .then(p => {
+    lat : p.coords.latitude,
+    lng : p.coords.longitude
+  })
+}
+.catch(e => alert(JSON.stringify(e)))*/
 }

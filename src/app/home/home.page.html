@@ -1,20 +1,48 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>
+<img height="40"   src="../burger-e-patatine-fritte-vettore-logo-design-snack-food-segno-isolato-2aycx75.jpg" > 
+</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Home
     </ion-title>
+      <ion-buttons slot="start">
+        <ion-menu-button menu="main-menu"></ion-menu-button>
+      </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">Pagina bella</ion-title>
     </ion-toolbar>
   </ion-header>
+<!--Prova localizzazione
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+<ion-item *ngIf="posizione">
+  <ion-label>
+    lat {{position.lat}} , lng {{position.lng}}
+    -->
+
+<ion-content class="auth-form">
+  <ion-grid>
+    <ion-row>
+      <ion-col align-self-center>
+        <ion-button [routerLink]="['/registration']" expand="block" color="secondary">Registrati </ion-button>
+
+        <span class="already">Già registrato?</span>
+
+        <ion-button [routerLink]="['/login']" expand="block" color="tertiary">Log In</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
